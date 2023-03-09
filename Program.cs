@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
+// Dependency Injection
 builder.Services.AddTransient<IDbOrderRepository, DbOrderRepository>();
 builder.Services.AddDbContext<DatabaseContext>();
 
